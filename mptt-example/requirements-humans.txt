@@ -1,0 +1,4 @@
+django==1.*
+django-extensions
+django-mptt
+pyreadline # Console tab completion

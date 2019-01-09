@@ -1,0 +1,4 @@
+django
+django-extensions
+pydash
+pyreadline # Console tab completion

@@ -1,0 +1,11 @@
+{% extends 'base/_layout.html' %}
+
+{% block content %}
+    <div class="form">
+        <form action="{{ request.path }}" method="POST" novalidate autocomplete="off">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><button type="submit" name="form_name" value="{{ form.prefix }}">Submit</button></p>
+        </form>
+    </div>
+{% endblock %}

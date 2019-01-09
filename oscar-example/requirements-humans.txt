@@ -1,0 +1,4 @@
+django-extensions
+django-oscar
+pycountry # Required for countries creation by fixtures
+pyreadline # Console tab completion

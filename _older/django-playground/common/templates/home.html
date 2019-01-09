@@ -1,0 +1,19 @@
+{% extends 'partials/base.html' %}
+
+{% block content %}
+    <h1>Home</h1>
+    
+    <p class='a'>{{ x|mul:3 }}</p>
+    
+    <p>
+        <form action='{% url 'common:hello' %}' method='POST' novalidate>
+            {% csrf_token %}
+            <input type='hidden' name='next' value='{% url 'common:redirected' %}'>
+            <button type='submit'>Hello</button>
+            
+            {% if request.user.is_authenticated %}
+                <a href='{% url 'common:logout' %}'>Log out</a>
+            {% endif %}
+        </form>
+    </p>
+{% endblock %}

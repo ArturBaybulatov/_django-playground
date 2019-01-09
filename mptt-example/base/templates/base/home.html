@@ -1,0 +1,24 @@
+{% extends 'base/_layout.html' %}
+{% load mptt_tags static %}
+
+{% block styles %}
+    <link href="{% static 'base/home.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <h2>All products from region {{ region }}, with categories: {{ category1 }}, {{ category2 }}</h2>
+
+    <ul>
+        {% for product in products %}
+            <li class="l-row">
+                <div>{{ product }}</div>
+                <div class="blue">{{ product.region }}</div>
+                <div class="green">{{ product.categories.all|join:", " }}</div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'base/home.js' %}"></script>
+{% endblock %}

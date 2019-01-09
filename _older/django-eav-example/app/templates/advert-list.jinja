@@ -1,0 +1,20 @@
+{% extends '_partials/_layout.jinja' %}
+
+
+{% block content %}
+  <script>
+    var djangoData = {
+      adverts: {{ data['adverts'] | safe }},
+      categories: {{ data['categories'] | safe }},
+      locations: {{ data['locations'] | safe }},
+      user: {{ data['user'] | safe }},
+    }
+  </script>
+  
+  
+  <ul style='background-color: #fcc'>
+    {% for advert in adverts %}
+      <li>{{ advert.eav }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

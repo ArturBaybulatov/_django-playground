@@ -1,0 +1,6 @@
+*.pyc
+.idea/
+local_settings.py
+
+media/*
+!media/_sample_files/

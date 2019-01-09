@@ -1,0 +1,10 @@
+{% extends '_layout.jinja' %}
+{% load staticfiles bootstrap3 %}
+
+{% block content %}
+  <ul>
+    {% for cat in categories %}
+      <li><a href='{% url 'category-list' %}{{cat.pk}}/update/'>{{cat.name}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

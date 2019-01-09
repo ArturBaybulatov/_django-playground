@@ -1,0 +1,3 @@
+django-extensions
+mezzanine
+pyreadline # Console tab completion

@@ -1,0 +1,10 @@
+{% extends '_partials/_layout.jinja' %}
+
+
+{% block content %}
+  <ul style='background-color: #cfc'>
+    {% for category in categories %}
+      <li>{{ category.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

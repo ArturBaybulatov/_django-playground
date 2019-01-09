@@ -1,0 +1,5 @@
+django
+django-extensions
+djangorestframework-filters
+graphene_django
+pyreadline # Console tab completion

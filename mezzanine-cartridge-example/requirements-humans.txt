@@ -1,0 +1,3 @@
+cartridge
+django-extensions
+pyreadline # Console tab completion

@@ -1,0 +1,4 @@
+django
+django-extensions
+django-mathfilters
+pyreadline # Console tab completion

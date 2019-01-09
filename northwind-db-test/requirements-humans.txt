@@ -1,0 +1,4 @@
+django==1.*
+django-extensions
+psycopg2
+pyreadline # Console tab completion

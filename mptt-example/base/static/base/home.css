@@ -1,0 +1,14 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.blue { color: blue }
+
+.green { color: green }

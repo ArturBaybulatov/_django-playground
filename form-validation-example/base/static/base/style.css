@@ -1,0 +1,27 @@
+body,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Reset */
+}
+
+
+.message {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: #ccc;
+    z-index: 100;
+}
+
+
+.field--errored {
+    background-color: red;
+}
+
+.field--required {
+    border: 2px solid blue;
+}
+
+
+.errorlist {
+    color: red;
+}

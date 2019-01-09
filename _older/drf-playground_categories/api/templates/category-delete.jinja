@@ -1,0 +1,14 @@
+{% extends '_layout.jinja' %}
+{% load staticfiles bootstrap3 %}
+
+{% block content %}
+  <form action='{% url 'category-list' %}{{category.pk}}/delete/' method='post' class='form'>
+    {% csrf_token %}
+    
+    <div>{{category}}</div>
+    
+    {% buttons %}
+      <button type='submit' class='btn btn-primary'>Delete</button>
+    {% endbuttons %}
+  </form>
+{% endblock %}

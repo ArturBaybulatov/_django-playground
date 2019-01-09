@@ -1,0 +1,10 @@
+{% extends '_layout.jinja' %}
+{% load staticfiles bootstrap3 %}
+
+{% block content %}
+  <ul>
+    {% for adv in adverts %}
+      <li><a href='{% url 'advert-list' %}{{adv.pk}}/update/'>{{adv.name}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,234 @@
+obuv = Category.objects.create(name='Обувь'); \
+  Category.objects.create(name='ботинки', parent=obuv); \
+  Category.objects.create(name='сандалии/босоножки', parent=obuv); \
+  Category.objects.create(name='балетки / туфли', parent=obuv); \
+  Category.objects.create(name='шлепанцы', parent=obuv); \
+  Category.objects.create(name='кросовки/кеды', parent=obuv); \
+  Category.objects.create(name='мокасины', parent=obuv); \
+  Category.objects.create(name='резиновые сапоги', parent=obuv); \
+  Category.objects.create(name='сноубутсы', parent=obuv); \
+  Category.objects.create(name='валенки', parent=obuv); \
+  Category.objects.create(name='сапоги', parent=obuv); \
+  Category.objects.create(name='унты', parent=obuv); \
+  Category.objects.create(name='угги', parent=obuv); \
+odezhda = Category.objects.create(name='Одежда'); \
+  x = Category.objects.create(name='одежда для новорожденных', parent=odezhda); \
+    Category.objects.create(name='конверты', parent=x); \
+    Category.objects.create(name='царапки', parent=x); \
+    Category.objects.create(name='пинетки', parent=x); \
+    Category.objects.create(name='пеленки', parent=x); \
+    Category.objects.create(name='комбинезоны', parent=x); \
+    Category.objects.create(name='на крещение', parent=x); \
+  Category.objects.create(name='бодики/песочники', parent=odezhda); \
+  Category.objects.create(name='для плавания', parent=odezhda); \
+  Category.objects.create(name='футболки / топы', parent=odezhda); \
+  Category.objects.create(name='шорты/юбки', parent=odezhda); \
+  Category.objects.create(name='платья', parent=odezhda); \
+  Category.objects.create(name='брюки', parent=odezhda); \
+  Category.objects.create(name='рубашки/сорочки', parent=odezhda); \
+  Category.objects.create(name='костюмы/пиджаки', parent=odezhda); \
+  Category.objects.create(name='школьная форма', parent=odezhda); \
+  Category.objects.create(name='маскарадные костюмы', parent=odezhda); \
+  Category.objects.create(name='комплекты', parent=odezhda); \
+  Category.objects.create(name='свитеры и кардиганы', parent=odezhda); \
+  Category.objects.create(name='толстовки', parent=odezhda); \
+  Category.objects.create(name='жилеты', parent=odezhda); \
+  Category.objects.create(name='куртки/пуховики', parent=odezhda); \
+  Category.objects.create(name='пальто/шубы', parent=odezhda); \
+  Category.objects.create(name='комбинезоны', parent=odezhda); \
+  Category.objects.create(name='головные уборы', parent=odezhda); \
+  Category.objects.create(name='шарфы', parent=odezhda); \
+  Category.objects.create(name='одежда для рук', parent=odezhda); \
+detsk_mebel = Category.objects.create(name='Детская мебель'); \
+  Category.objects.create(name='кроватки', parent=detsk_mebel); \
+  Category.objects.create(name='колыбельки/люльки', parent=detsk_mebel); \
+  Category.objects.create(name='комоды', parent=detsk_mebel); \
+  Category.objects.create(name='манежи', parent=detsk_mebel); \
+  Category.objects.create(name='пеленальные столики/доски', parent=detsk_mebel); \
+  Category.objects.create(name='стульчики для кормления', parent=detsk_mebel); \
+  Category.objects.create(name='шезлонги/качели', parent=detsk_mebel); \
+  Category.objects.create(name='ходунки, прыгунки', parent=detsk_mebel); \
+  Category.objects.create(name='стулья', parent=detsk_mebel); \
+  Category.objects.create(name='столы', parent=detsk_mebel); \
+  Category.objects.create(name='комплекты мебели', parent=detsk_mebel); \
+  Category.objects.create(name='детские спортивные комплексы', parent=detsk_mebel); \
+  Category.objects.create(name='детские ковры', parent=detsk_mebel); \
+  Category.objects.create(name='элементы безопасности', parent=detsk_mebel); \
+igrushki = Category.objects.create(name='Игрушки'); \
+  x = Category.objects.create(name='Для новорожденных'', parent=igrushki); \
+    Category.objects.create(name='погремушки/прорезыватели', parent=x); \
+    Category.objects.create(name='мобили', parent=x); \
+    Category.objects.create(name='игровые столики', parent=x); \
+    Category.objects.create(name='игрушки для автокресел и колясок', parent=x); \
+    Category.objects.create(name='пирамидки', parent=x); \
+    Category.objects.create(name='проекторы и ночники', parent=x); \
+    Category.objects.create(name='развивающие коврики', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  Category.objects.create(name='детские книги', parent=igrushki); \
+  Category.objects.create(name='мягкие', parent=igrushki); \
+  Category.objects.create(name='интерактивные', parent=igrushki); \
+  Category.objects.create(name='экологичные', parent=igrushki); \
+  x = Category.objects.create(name='головоломки и конструкторы', parent=igrushki); \
+    Category.objects.create(name='конструкторы', parent=x); \
+    Category.objects.create(name='кубики', parent=x); \
+    Category.objects.create(name='сортеры/головоломки', parent=x); \
+    Category.objects.create(name='мозайки / паззлы', parent=x); \
+    Category.objects.create(name='шнуровки', parent=x); \
+    Category.objects.create(name='рамки-вкладыши', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  x = Category.objects.create(name='кукольный мир', parent=igrushki); \
+    Category.objects.create(name='куклы', parent=x); \
+    Category.objects.create(name='кукольные домики и аксессуары', parent=x); \
+    Category.objects.create(name='игрушечные коляски', parent=x); \
+    Category.objects.create(name='игрушечные кроватки', parent=x); \
+  x = Category.objects.create(name='ролевые игры', parent=igrushki); \
+    Category.objects.create(name='шпионы/полицейские', parent=x); \
+    Category.objects.create(name='детские театры', parent=x); \
+    Category.objects.create(name='детская посуда', parent=x); \
+    Category.objects.create(name='наборы инструментов', parent=x); \
+    Category.objects.create(name='наборы доктора', parent=x); \
+    Category.objects.create(name='научные игры', parent=x); \
+    Category.objects.create(name='все для кухни', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  x = Category.objects.create(name='крупные игрушки', parent=igrushki); \
+    Category.objects.create(name='палатки / домики', parent=x); \
+    Category.objects.create(name='игрушки качалки', parent=x); \
+    Category.objects.create(name='ящики для игрушек', parent=x); \
+    Category.objects.create(name='мячи/прыгуны', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  Category.objects.create(name='игрушечное оружие', parent=igrushki); \
+  Category.objects.create(name='фигурки героев / солдатики', parent=igrushki); \
+  x = Category.objects.create(name='творчество', parent=igrushki); \
+    Category.objects.create(name='доски и мольберты', parent=x); \
+    Category.objects.create(name='наборы для рисования', parent=x); \
+    Category.objects.create(name='аппликации и наклейки', parent=x); \
+    Category.objects.create(name='бисер и шитье', parent=x); \
+    Category.objects.create(name='пластилин / лепка', parent=x); \
+    Category.objects.create(name='кинетический песок', parent=x); \
+    Category.objects.create(name='музыкальные инструменты', parent=x); \
+    Category.objects.create(name='неокубики', parent=x); \
+    Category.objects.create(name='муравьиные фермы', parent=x); \
+    Category.objects.create(name='танцевальные коврики', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  x = Category.objects.create(name='техника/транспорт', parent=igrushki); \
+    Category.objects.create(name='железные дороги', parent=x); \
+    Category.objects.create(name='игрушечные треки и гаражи', parent=x); \
+    Category.objects.create(name='корабли и лодки', parent=x); \
+    Category.objects.create(name='машинки', parent=x); \
+    Category.objects.create(name='электромобили', parent=x); \
+    Category.objects.create(name='каталки', parent=x); \
+    Category.objects.create(name='педальные машинки', parent=x); \
+    Category.objects.create(name='радиоуправляемые', parent=x); \
+    Category.objects.create(name='самолеты/вертолеты', parent=x); \
+    Category.objects.create(name='военная техника', parent=x); \
+    Category.objects.create(name='сборные модели', parent=x); \
+  x = Category.objects.create(name='настольные игры', parent=igrushki); \
+    Category.objects.create(name='бильярд', parent=x); \
+    Category.objects.create(name='дартс', parent=x); \
+    Category.objects.create(name='домино', parent=x); \
+    Category.objects.create(name='лото', parent=x); \
+    Category.objects.create(name='настольный хоккей/футбол', parent=x); \
+    Category.objects.create(name='морской бой', parent=x); \
+    Category.objects.create(name='монополия', parent=x); \
+    Category.objects.create(name='стратегии', parent=x); \
+    Category.objects.create(name='квесты', parent=x); \
+    Category.objects.create(name='шахматы/шашки/нарды', parent=x); \
+    Category.objects.create(name='твистер', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+kolyaski = Category.objects.create(name='Коляски'); \
+  Category.objects.create(name='коляски-люльки', parent=kolyaski); \
+  Category.objects.create(name='прогулочная коляска', parent=kolyaski); \
+  x = Category.objects.create(name='коляска универсальная', parent=kolyaski); \
+    Category.objects.create(name='трансформер', parent=x); \
+    Category.objects.create(name='универсальная (2 в 1)', parent=x); \
+    Category.objects.create(name='универсальная (3 в 1)', parent=x); \
+  Category.objects.create(name='коляски для двойни и более', parent=kolyaski); \
+  Category.objects.create(name='аксессуары для колясок', parent=kolyaski); \
+avtokresla = Category.objects.create(name='Автокресла'); \
+  Category.objects.create(name='автокресло', parent=avtokresla); \
+  Category.objects.create(name='бустер', parent=avtokresla); \
+  Category.objects.create(name='аксессуары для автокресел', parent=avtokresla); \
+  Category.objects.create(name='аксессуары для путешествий', parent=avtokresla); \
+vse_dlya_vannoy = Category.objects.create(name='Всё для ванной'); \
+  Category.objects.create(name='Накопители подгузников', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Подгузники', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Весы для детей', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Горшки', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Подставки для умывания', parent=vse_dlya_vannoy); \
+  x = Category.objects.create(name='Детская косметика', parent=vse_dlya_vannoy); \
+    Category.objects.create(name='зубная паста', parent=x); \
+    Category.objects.create(name='уход за кожей', parent=x); \
+    Category.objects.create(name='уход за волосами', parent=x); \
+    Category.objects.create(name='наборы', parent=x); \
+    Category.objects.create(name='декоративная косметика', parent=x); \
+    Category.objects.create(name='парфюмерия', parent=x); \
+    Category.objects.create(name='прочее', parent=x); \
+  Category.objects.create(name='Термометры', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Товары для здоровья', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='Увлажнители и очистители воздуха', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='ванночки', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='горки и сиденья для ванн', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='полотенца', parent=vse_dlya_vannoy); \
+  Category.objects.create(name='все для купания', parent=vse_dlya_vannoy); \
+pomosch_mame = Category.objects.create(name='Помощь маме'); \
+  Category.objects.create(name='радио-няни / рации', parent=pomosch_mame); \
+  Category.objects.create(name='видео-няни', parent=pomosch_mame); \
+  Category.objects.create(name='мониторы для дыхания', parent=pomosch_mame); \
+  Category.objects.create(name='сумки', parent=pomosch_mame); \
+  Category.objects.create(name='молокоотсосы', parent=pomosch_mame); \
+  Category.objects.create(name='стерилизаторы', parent=pomosch_mame); \
+  Category.objects.create(name='сушилки для бутылочек', parent=pomosch_mame); \
+  Category.objects.create(name='подогреватели', parent=pomosch_mame); \
+  Category.objects.create(name='блендеры-пароварки', parent=pomosch_mame); \
+  Category.objects.create(name='измельчители/комбайны', parent=pomosch_mame); \
+  Category.objects.create(name='аксессуары для кормления', parent=pomosch_mame); \
+  Category.objects.create(name='подушки', parent=pomosch_mame); \
+  Category.objects.create(name='бутылочки детские', parent=pomosch_mame); \
+  Category.objects.create(name='поильники', parent=pomosch_mame); \
+  Category.objects.create(name='термосы', parent=pomosch_mame); \
+  Category.objects.create(name='термосумки', parent=pomosch_mame); \
+  Category.objects.create(name='детское питание', parent=pomosch_mame); \
+  Category.objects.create(name='одежда для беременных', parent=pomosch_mame); \
+  Category.objects.create(name='детская посуда', parent=pomosch_mame); \
+igry_na_ulitse = Category.objects.create(name='Игры на улице'); \
+  Category.objects.create(name='бассейны и аксессуары', parent=igry_na_ulitse); \
+  Category.objects.create(name='батуты и аксессуары', parent=igry_na_ulitse); \
+  Category.objects.create(name='качели', parent=igry_na_ulitse); \
+  Category.objects.create(name='игровые комплексы', parent=igry_na_ulitse); \
+  Category.objects.create(name='горки', parent=igry_na_ulitse); \
+  Category.objects.create(name='песочницы', parent=igry_na_ulitse); \
+  Category.objects.create(name='аксессуары для песочницы', parent=igry_na_ulitse); \
+  Category.objects.create(name='игровые домики и палатки', parent=igry_na_ulitse); \
+  x = Category.objects.create(name='велотехника', parent=igry_na_ulitse); \
+    Category.objects.create(name='беговелы', parent=x); \
+    Category.objects.create(name='вело-мобили', parent=x); \
+    Category.objects.create(name='велосипеды', parent=x); \
+  Category.objects.create(name='электро-мобили', parent=igry_na_ulitse); \
+  Category.objects.create(name='самокаты', parent=igry_na_ulitse); \
+  Category.objects.create(name='санки / снегокаты', parent=igry_na_ulitse); \
+  Category.objects.create(name='лыжи и сноуборды', parent=igry_na_ulitse); \
+  Category.objects.create(name='коньки ледовые', parent=igry_na_ulitse); \
+  Category.objects.create(name='скейтборды', parent=igry_na_ulitse); \
+  Category.objects.create(name='ролики', parent=igry_na_ulitse); \
+  Category.objects.create(name='воздушные змеи', parent=igry_na_ulitse); \
+  Category.objects.create(name='комплекты защиты', parent=igry_na_ulitse); \
+  Category.objects.create(name='спортивные игры', parent=igry_na_ulitse); \
+postel = Category.objects.create(name='Постельные принадлежности'); \
+  Category.objects.create(name='постельное белье', parent=postel); \
+  Category.objects.create(name='матрасы', parent=postel); \
+  Category.objects.create(name='наматрасники', parent=postel); \
+  Category.objects.create(name='подушки', parent=postel); \
+  Category.objects.create(name='одеяла', parent=postel); \
+  Category.objects.create(name='подвески', parent=postel); \
+  Category.objects.create(name='бортики/бамперы', parent=postel); \
+  Category.objects.create(name='позиционеры для сна', parent=postel); \
+  Category.objects.create(name='спальные пижамы/ спальные мешки', parent=postel); \
+  Category.objects.create(name='одеяла', parent=postel); \
+  Category.objects.create(name='электропростыни', parent=postel); \
+  Category.objects.create(name='пледы', parent=postel); \
+shkola = Category.objects.create(name='Школа'); \
+  Category.objects.create(name='школьная форма', parent=shkola); \
+  Category.objects.create(name='ранцы/рюкзаки', parent=shkola); \
+  Category.objects.create(name='пеналы', parent=shkola); \
+  Category.objects.create(name='парты', parent=shkola); \
+  Category.objects.create(name='прочее', parent=shkola)
